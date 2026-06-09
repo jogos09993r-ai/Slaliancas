@@ -1,0 +1,177 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Imagem de fundo fixa e cobrindo toda a tela */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg.webp') no-repeat center center fixed;
+    background-size: cover;
+    color:#6495ED;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho e Menu */
+header {
+    background-color: #7B68EE;
+    padding: 20px;
+    border-bottom: 2px solid #d4af37; /* Cor Ouro */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    color: #d4af37;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #d4af37;
+}
+
+/* Conteúdo Principal */
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.container-box {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    text-align: center;
+}
+
+h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Botão do WhatsApp */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+}
+
+/* Galeria de Fotos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.galeria-item {
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    height: 250px;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Como Chegar (Mapa) */
+.mapa-container {
+    margin-top: 30px;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    display: block;
+}
+
+/* Rodapé */
+footer {
+    background-color: #7B68EE;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    font-size: 14px;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+}
