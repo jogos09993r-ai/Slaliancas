@@ -5,80 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alianças de Moeda Antiga Premium | R$ 180 o Par</title>
     
-  <link href="https://jogos09993r-ai.github.io/Slaliancas/9.jpeg" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://jogos09993r-ai.github.io/Slaliancas/9.jpeg">
-      <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    
+    <style>
+        /* Estilização da Logo com Alianças Integradas */
+        .logo h1 {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px; /* Espaço entre o desenho e o texto */
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, var(--neon-purple), var(--ouro-vibrante));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
+        /* Define o tamanho e cor do ícone SVG de alianças */
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            stroke: var(--ouro-vibrante);
+            flex-shrink: 0;
+        }
+
+        /* Ajustes de tamanho para Celular */
+        @media (max-width: 768px) {
+            .logo h1 {
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+            .logo-icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
 </head>
 <body>
- <header>
+
+    <header>
         <div class="nav-container">
             <div class="logo">
-                <h1>SL ALIANÇAS</h1>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                        <circle cx="8" cy="12" r="5" />
+                        <circle cx="16" cy="12" r="5" />
+                    </svg>
+                    SL ALIANÇAS
+                </h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
                     <li><a href="como-chegar.html">Como Chegar</a></li>
-                    <li><a href="contato.html" >Contato</a></li>
-					<li><a href="valores.html">Consultar preços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="valores.html">Consultar preços</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="page-container">
-        
-       
+    <main class="pricing-card">
+        <div class="image-container">
+            <img src="file:///C:/Users/Aluno/Documents/dabeil/9.jpeg" alt="Alianças de Moeda Antiga">
+            <div class="image-overlay"></div>
+        </div>
+
+        <div class="card-content">
+            <h2 class="card-title">Moeda Antiga Tradicional</h2>
+            <p class="card-subtitle">Cor e Brilho Idênticos ao Ouro 18k</p>
             
-                
-            </div>
-           
-           
-        </header>
-
-        <main class="pricing-card">
-           
-            <div class="image-container">
-                <img src="9.jpeg" alt="Alianças de Moeda Antiga">
-                <div class="image-overlay"></div>
-            </div>
-
-            <div class="card-content">
-                <h2 class="card-title">Moeda Antiga Tradicional</h2>
-                <p class="card-subtitle">Cor e Brilho Idênticos ao Ouro 18k</p>
-                
-                <div class="price-box">
-                  
-                    <div class="main-price">
-                        <span class="currency">R$</span>
-                        <span class="value">180</span>
-                        <span class="centavos">,00</span>
-                    </div>
-                    <span class="period">O Par Completo</span>
+            <div class="price-box">
+                <div class="main-price">
+                    <span class="currency">R$</span>
+                    <span class="value">180</span>
+                    <span class="centavos">,00</span>
                 </div>
-
-                <ul class="benefits-list">
-                    <li><i class="fa-solid fa-star"></i> Não descasca, não preteia e não enferruja</li>
-                    <li><i class="fa-solid fa-shield-heart"></i> Garantia Vitalícia na cor dourada</li>
-                    <li><i class="fa-solid fa-gem"></i>  (Super Confortável)</li>
-                   
-                </ul>
-
-               
-                </a>
+                <span class="period">O Par Completo</span>
             </div>
-        </main>
 
-        <footer class="footer-info">
-            
-            <div class="divider"></div>
-          
-        </footer>
+            <ul class="benefits-list">
+                <li><i class="fa-solid fa-star"></i> Não descasca, não preteia e não enferruja</li>
+                <li><i class="fa-solid fa-shield-heart"></i> Garantia Vitalícia na cor dourada</li>
+                <li><i class="fa-solid fa-gem"></i> (Super Confortável)</li>
+            </ul>
+        </div>
+    </main>
 
-    </div>
+    <footer class="footer-info">
+        <div class="divider"></div>
+    </footer>
 
 </body>
 </html>
